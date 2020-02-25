@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- xinyusoft start  -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#ff000000</color>
+    <color name="red">#ffff0000</color>
+    <color name="gesture_background">#ff303237</color>
+    <color name="color_hei_8">#00000000</color>
+    <color name="color_none">#00000000</color>
+    <color name="color_Input_black">#E8E8E8</color>
+    <!--IOSDialog start-->
+    <color name="alertdialog_line">#90c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <!--IOSDialog end-->
+    <drawable name="trans">@color/color_hei_8</drawable>
+    <!--&lt;!&ndash; 沉浸式状态栏的颜色  蓝色 &ndash;&gt;-->
+    <!--<color name="colorful_status_bar">#2e6bb1</color>-->
+    <!--开户宝的状态栏的颜色-->
+    <!--<color name="colorful_status_bar">#4284f4</color>-->
+    <!--<color name="colorful_status_bar">#ff000000</color>-->
+    <!--沉浸式状态栏的颜色  黑金-->
+    <!--<color name="colorful_status_bar">#5a3319</color>-->
+    <!--沉浸式状态栏的颜色  透明-->
+    <!--<color name="colorful_status_bar">#00000000</color>-->
+    <!--沉浸式状态栏的颜色  Mom颜色-->
+    <!--<color name="colorful_status_bar">#f8a01e</color>-->
+    <!--ibroker pad的颜色-->
+    <!--<color name="colorful_status_bar">#1a2636</color>-->
+    <!--沉浸式状态栏的颜色 专户理财师颜色-->
+    <!--<color name="colorful_status_bar">#D33D3E</color>-->
+    <!--沉浸式状态栏的颜色 FOS资管终端颜色-->
+    <color name="colorful_status_bar">#3D4354</color>
+    <!-- xinyusoft end  -->
+</resources>

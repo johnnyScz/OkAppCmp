@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_checkboxs"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/dp_2"
+    android:paddingBottom="@dimen/dp_2">
+
+    <CheckBox
+        android:id="@+id/one"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginLeft="@dimen/dp_21"
+        android:background="@drawable/round_white_bg"
+        android:button="@null"
+        android:checked="true"
+        android:gravity="center"
+        android:text="周一"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp_13" />
+
+    <CheckBox
+        android:id="@+id/two"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/round_white_bg"
+        android:button="@null"
+        android:checked="true"
+        android:gravity="center"
+        android:text="周二"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp_13" />
+
+    <CheckBox
+        android:id="@+id/three"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/round_white_bg"
+        android:button="@null"
+        android:checked="true"
+        android:gravity="center"
+        android:text="周三"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp_13" />
+
+    <CheckBox
+        android:id="@+id/four"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/round_white_bg"
+        android:button="@null"
+        android:checked="true"
+        android:gravity="center"
+        android:text="周四"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp_13" />
+
+    <CheckBox
+        android:id="@+id/five"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/round_white_bg"
+        android:button="@null"
+        android:checked="true"
+        android:gravity="center"
+        android:text="周五"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp_13" />
+
+    <CheckBox
+        android:id="@+id/six"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/round_white_bg"
+        android:button="@null"
+        android:checked="true"
+        android:gravity="center"
+        android:text="周六"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp_13" />
+
+    <CheckBox
+        android:id="@+id/seven"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/round_white_bg"
+        android:button="@null"
+        android:checked="true"
+        android:gravity="center"
+        android:text="周日"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp_13" />
+</LinearLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+    <string name="dial_hide">隐藏</string>
+</resources>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/dp_20"
+    android:background="@color/bg_main_layout"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="设置挑战金"
+            android:textColor="#333"
+            android:textSize="@dimen/dp_16" />
+
+        <ImageView
+            android:id="@+id/icon_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_back" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/dp_20"
+        android:src="@mipmap/icon_succed" />
+
+
+    <TextView
+        android:layout_margin="@dimen/dp_20"
+        android:id="@+id/tv_monitor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/ti_top"
+            style="@style/textTitlesmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_40"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            android:text="挑战金"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/top"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/ti_top"
+            android:background="@drawable/shaper_creat_group"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="¥" />
+
+
+            <EditText
+                android:id="@+id/edt_money"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_toRightOf="@id/inco_left"
+                android:background="@null"
+                android:focusableInTouchMode="true"
+                android:hint="请输入挑战金额"
+                android:inputType="number"
+                android:maxLength="5"
+                android:textCursorDrawable="@null"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_gowhere"
+            style="@style/textTitlesmallgray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:drawableLeft="@mipmap/quoto"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="挑战金去哪了" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_commit"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_login_select"
+        android:text="我要支付挑战金"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tv_goback"
+        style="@style/textTitle70Balck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_20"
+        android:gravity="center"
+        android:text="暂不设置挑战金,返回目标列表" />
+
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/dp_15">
+
+    <CheckBox
+        android:id="@+id/check"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="7dp"
+        android:background="@drawable/shaper_monitor_checkbox"
+        android:button="@null"
+        android:checked="false"
+        android:gravity="center" />
+
+    <ImageView
+        android:id="@+id/inco_person"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center|left"
+        android:text="子布局Name" />
+</LinearLayout>

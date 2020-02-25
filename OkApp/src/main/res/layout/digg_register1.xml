@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_margin="@dimen/dp_15"
+        android:src="@drawable/icon_back" />
+
+
+    <TextView
+        style="@style/textTitleHug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="48dp"
+        android:paddingTop="@dimen/dp_20"
+        android:text="欢迎使用" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="@string/rigester_info"
+        android:textColor="@color/text_aaa" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginRight="48dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:focusableInTouchMode="true"
+            android:maxLength="10"
+            android:hint="请输入姓名"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:background="#cccccc" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/edt_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:focusableInTouchMode="true"
+            android:hint="请输入手机号码"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:background="#cccccc" />
+
+    <LinearLayout
+        android:id="@+id/ll_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="48dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/edt_code"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:focusableInTouchMode="true"
+            android:hint="请输入验证码"
+            android:inputType="number"
+            android:maxLength="6"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/counttextview"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_40"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:text="获取验证码"
+            android:textColor="@color/button_vip" />
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:background="#cccccc" />
+
+
+    <TextView
+        android:id="@+id/error_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/dp_10"
+        android:text="验证码错误"
+        android:textColor="@color/red_color"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btn_register"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginRight="48dp"
+        android:background="@drawable/btn_login_select"
+        android:text="注 册"
+        android:textColor="@color/mall_white"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

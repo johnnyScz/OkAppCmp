@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xinyu.newdiggtest.view.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true">
+
+    <LinearLayout
+        android:id="@+id/rl_item1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginBottom="5dp">
+
+            <LinearLayout
+                android:id="@+id/iv_target_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_icon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/dp_3"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/iv_head"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/dp_3"
+                    android:scaleType="fitXY" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/iv_target_icon"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/dp_10">
+
+                <TextView
+                    android:id="@+id/tv_target_title"
+                    style="@style/textTitlesmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    tools:text="目标说明" />
+
+                <TextView
+                    android:id="@+id/tv_sub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    tools:text="我要每天打卡" />
+
+
+                <TextView
+                    android:id="@+id/txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="2dp"
+                    tools:text="习大大，马云" />
+
+                <TextView
+                    android:id="@+id/commont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    tools:text="打开心情" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/img_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:scaleType="fitCenter" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_daka_4img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="50dp">
+
+            <com.lzy.ninegrid.NineGridView
+                android:id="@+id/nineGrid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="@dimen/dp_10" />
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/ll_have_common"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_20"
+            android:paddingLeft="40dp">
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_sub"
+                android:textSize="@dimen/dp_12"
+                tools:text="08:00" />
+
+            <ImageView
+                android:id="@+id/iv_common_more"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/msg" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/digCommentBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="@dimen/dp_20"
+            android:background="@color/bg_itme"
+            android:minHeight="50dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.xinyu.newdiggtest.widget.PraiseListView
+                android:id="@+id/praiseListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_3"
+                android:paddingBottom="@dimen/dp_3"
+                android:textSize="14dp" />
+
+
+            <com.xinyu.newdiggtest.widget.DakaDashangListView
+                android:id="@+id/dashanglistview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_3"
+                android:paddingBottom="@dimen/dp_3"
+                android:textSize="14dp" />
+
+
+            <com.xinyu.newdiggtest.view.CommentListView
+                android:id="@+id/commentList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_20"
+        android:background="#F76E6B"
+        android:text="删除"
+        android:textColor="@android:color/white" />
+</com.xinyu.newdiggtest.view.SwipeMenuLayout>
+
+
+
+
+
+
+
+
+
+
+
+

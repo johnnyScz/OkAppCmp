@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    android:background="#ffffff"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/cancel"
+            android:background="#ffffff"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:text="取消"
+            />
+        <TextView
+            android:id="@+id/finish"
+            android:background="#ffffff"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="完成"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+
+            />
+    </RelativeLayout>
+
+    <com.xinyu.newdiggtest.widget.datepicker.WheelDatePicker
+        android:id="@+id/my_date_time_left"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>

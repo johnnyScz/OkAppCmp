@@ -1,0 +1,12 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <paths>
+        <external-path
+            name="download"
+            path="." />
+        <!--.表示根目录下的文件都是可以共享的 -->
+        <!--external-cache-path  相当于 getExternalCacheDir（） -->
+        <external-cache-path
+            name="lei"
+            path="." />
+    </paths>
+</resources>

@@ -1,0 +1,93 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="cc_app_name">SmartSdk</string>
+    <string name="cc_provider_busy">Provider is busy, wait or not?</string>
+    <string name="cc_wait">Countinue waiting</string>
+    <string name="cc_not_wait">Do not Wait</string>
+    <string name="cc_share_camera">Open and share the camera, yes or no?</string>
+    <string name="cc_open">Open</string>
+    <string name="cc_not_open">Do not Open</string>
+    <string name="cc_float_view_text">In service&#8230;</string>
+    <string name="cc_login_success_tip">Hello, provider %1$s will serve you!</string>
+    <string name="cc_connect_success_voice_tip">Your voice will be sent to provider, you can use the following button to open or close voice:</string>
+    
+    <string name="cc_default_score">3 stars</string>
+    <string name="cc_satisfaction_for_service">Service rating:</string>
+    <plurals name="cc_rating_scores">
+        <item quantity="one">1 star</item>
+        <item quantity="other">"<xliff:g id="COUNT">%d</xliff:g> stars"</item>
+    </plurals>
+    
+    
+    <string name="cc_desktop_shared">Desktop sharing</string>
+    <string name="cc_desktop_shared_tip">Agree with the desktop sharing? \n if yes, that means you accept all the relevant legal agreements, provider can remotely control your desktop; during the desktop sharing process, you can use the following button to pause or resume desktop sharing:</string>
+    <string name="cc_stop_service">Stop Service</string>
+    <string name="cc_switch_provider_dialog_msg">Switching provider...</string>
+    <string name="cc_turn_on">Turn On</string>
+    <string name="cc_turn_off">Turn Off</string>
+    <string name="cc_video_pause">Pause Video</string>
+    <string name="cc_video_resume">Resume Video</string>
+    <string name="cc_take_picture_success">Take picture success</string>
+    <string name="cc_take_picture_failed">Take picture failed</string>
+    
+     <!-- <string name="cc_sdk_update_title">CChelper SDK XiaoZhi Update Tip</string> -->
+    <string name="cc_sdk_update_tip">The app integrated CChelper SDK that version is too low，need to upgrade the app that integrated the latest CChelper SDK version，otherwise sdk is unable to work correctly.</string>
+    <string name="cc_sdk_update_new_version">New Version:</string>
+    <string name="cc_sdk_update_content">Update Content:</string>
+    <string name="cc_continue">Continue</string>
+    <string name="cc_stop">Stop</string>
+    
+    <string name="cc_provider_service">Provider %1$s is serving you.</string>
+    <string name="cc_recorder_perm_ban">recorder permission is closed</string>
+    <string name="cc_init_flow_text">0MB</string>
+
+    <string name="cc_connecting_provider">Connecting provider, please wait!</string>
+    <string name="cc_connect_provider_timeout">Connecting timeout</string>
+    <string name="cc_connect_exception">Connecting exception</string>
+    
+    <string name="cc_connect_already_start">service already start</string>
+    <string name="cc_connect_provider_succ">Connecting success</string>
+    <string name="cc_connect_provider_failed">Connecting failed</string>
+    <string name="cc_provider_offline">Provider is offline</string>
+    <string name="cc_provider_no_found">Provider no found</string>
+    <string name="cc_server_company_no_found">company no found</string>
+    
+    <string name="cc_voice_connect_failed">Voice Connect Failed</string>
+    <string name="cc_voice_connect_timeout">Voice Connect Timeout</string>
+    <string name="cc_voice_connect_exception">Voice Connect Exception</string>
+    <string name="cc_voice_connect_succ">Voice Connect Success</string>
+    <string name="cc_voice_provider_failed">Voice Connect Failed</string>
+    <string name="cc_voice_close">Voice Close</string>
+    
+    <string name="cc_video_connect_failed">Video Connect Failed</string>
+    <string name="cc_video_connect_exception">Video Connect Exception</string>
+    <string name="cc_video_connect_timeout">Video Connect Timeout</string>
+    <string name="cc_video_connect_succ">Video Connect Success</string>
+    <string name="cc_video_close">Video service Success</string>
+    
+    <string name="cc_camera_connect_failed">Camera Connect Failed</string>
+    <string name="cc_camera_connect_timeout">Camera Connect Timeout</string>
+    <string name="cc_camera_connect_exception">Camera Connect Exception</string>
+    <string name="cc_camera_open_failed">Camera Open Faileds</string>
+    
+    <string name="cc_back_camera">back</string>
+    <string name="cc_front_camera">front</string>
+    <string name="cc_open_camera_tips">Open %1$s camera success!</string>
+    <string name="cc_close_camera_tips">Close camera success</string>
+    
+    <string name="cc_client_edge_out">Account edge out</string>
+    <string name="cc_provider_leave">Provider Leave</string>
+    
+    <string name="cc_switch_provider_succ">Switch to %1$s provider success</string>
+    <string name="cc_switch_provider_failed">Switch provider failed</string>
+    
+    <string name="cc_network_exception">Network is poor</string>
+    <string name="cc_camera_pause">Camera Pause</string>
+    <string name="cc_camera_resume">Camera Resume</string>
+	
+	<string name="cc_provider_busy_number">Provider is busy, wait or not? Before waiting: 1%$s</string>
+    <string name="cc_unknow_number">*</string>
+    <string name="cc_waiting_idle_provider">Waiting idle provider，before waiting：%1$s</string>
+    
+    
+</resources>

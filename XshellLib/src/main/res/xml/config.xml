@@ -1,0 +1,388 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget
+    id="com.example.hello"
+    version="0.0.1">
+
+    <preference
+        name="loglevel"
+        value="DEBUG" />
+
+    <allow-intent href="market:*" />
+
+    <name>
+        HelloWorld
+    </name>
+
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+
+    <author
+        email="dev@cordova.apache.org"
+        href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+
+    <content src="index.html" />
+
+    <access origin="*" />
+
+    <allow-navigation href="*" />
+    <allow-navigation href="file://*" />
+
+    <allow-intent href="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+
+    <preference
+        name="LoadUrlTimeoutValue"
+        value="60000000" />
+
+    <feature name="Whitelist">
+        <param
+            name="android-package"
+            value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param
+            name="onload"
+            value="true" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param
+            name="android-package"
+            value="org.apache.cordova.networkinformation.NetworkManager" />
+    </feature>
+    <feature name="NativePlugin">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.NativePlugin" />
+    </feature>
+    <feature name="DevicePlugin">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.DevicePlugin" />
+    </feature>
+    <feature name="WeiXinPlugin">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.WeiXinPlugin" />
+    </feature>
+    <!--软键盘的插件-->
+    <feature name="KeyboardPlugin">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.KeyboardPlugin" />
+    </feature>
+    <!--百度定位-->
+    <feature name="LocationPlugin">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.BaiduMapPlugin" />
+    </feature>
+    <!--扫二维码-->
+    <feature name="TwoDimensionCode">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.TwoDimensionCode" />
+    </feature>
+    <!--录音插件-->
+    <feature name="RecordPlugin">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.RecordPlugin" />
+    </feature>
+    <!--文件管理-->
+    <feature name="FileOperationPlugin">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.FileOperationPlugin" />
+    </feature>
+    <!--微信分享与登入-->
+    <feature name="WeChatPlugin">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.WeChatPlugin" />
+    </feature>
+    <!--wn-->
+    <feature name="screenLandscapePlugin">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.screenLandscapePlugin" />
+    </feature>
+    <feature name="setClipBoardPlugin">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.setClipBoardPlugin" />
+    </feature>
+
+    <!--<feature name="showKeyBoardPlugin" >-->
+    <!--<param-->
+    <!--name="android-package"-->
+    <!--value="com.xinyusoft.xshelllib.plugin.showKeyBoardPlugin" />-->
+    <!--</feature>-->
+
+    <feature name="xinyuNewBrowserPlugin">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.xinyuNewBrowserPlugin" />
+    </feature>
+    <feature name="SoundPlugin">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.SoundPlugin" />
+    </feature>
+    <feature name="sm4Plugin">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.sm4Plugin" />
+    </feature>
+
+    <!--<feature name="sm2Plugin" >-->
+    <!--<param-->
+    <!--name="android-package"-->
+    <!--value="com.xinyusoft.xshelllib.plugin.sm2Plugin" />-->
+    <!--</feature>-->
+
+    <!--<feature name="CCPlayerPlugin" >-->
+    <!--<param-->
+    <!--name="android-package"-->
+    <!--value="com.xinyusoft.xshelllib.plugin.CCPlayerPlugin" />-->
+    <!--</feature>-->
+
+    <feature name="CordovaHttpPlugin">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.tools.http.CordovaHttpPlugin" />
+    </feature>
+
+    <feature name="XingePlugin">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.XingePlugin" />
+    </feature>
+    <!--AES256加密解密插件-->
+    <feature name="EncryptPlugin">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.EncryptPlugin" />
+    </feature>
+
+    <feature name="SafetyPlugin">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.SafetyPlugin" />
+    </feature>
+    <feature name="GetXgBadgePlugin">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.GetXgBadgePlugin" />
+    </feature>
+    <feature name="WebSocketPlugin">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.WebSocketPlugin" />
+    </feature>
+    <!--<feature name="QRCodePlugin">-->
+    <!--<param-->
+    <!--name="android-package"-->
+    <!--value="com.xshell.xshelllib.plugin.QRCodePlugin" />-->
+    <!--</feature>-->
+
+    <feature name="LuckViewPlugin">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.LuckViewPlugin" />
+    </feature>
+    <!---->
+    <!--<feature name="SqliteUserPlugin" >-->
+    <!--<param-->
+    <!--name="android-package"-->
+    <!--value="com.xinyusoft.xshelllib.plugin.SqliteUserPlugin" />-->
+    <!--</feature>-->
+
+    <feature name="AlipayPlugin">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.AliPayPlugin" />
+    </feature>
+
+    <feature name="SplashScreen">
+        <param
+            name="android-package"
+            value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param
+            name="onload"
+            value="true" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param
+            name="android-package"
+            value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
+    <feature name="Notification">
+        <param
+            name="android-package"
+            value="org.apache.cordova.dialogs.Notification" />
+    </feature>
+
+    <feature name="SQLitePlugin">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.SQLitePlugin" />
+    </feature>
+
+    <!--支付密码框-->
+    <feature name="PayPasswordPlugin">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.PayPasswordPlugin" />
+    </feature>
+    <!--<feature name="PayPasswordPlugin">-->
+    <!--<param-->
+    <!--name="android-package"-->
+    <!--value="com.xshell.xshelllib.plugin.PayPasswordPlugin" />-->
+    <!--</feature>-->
+
+    <feature name="WeiXinSharePlugin">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.WeiXinSharePlugin" />
+    </feature>
+
+    <!--<feature name="SmartPlayerPlugin" >-->
+    <!--<param-->
+    <!--name="android-package"-->
+    <!--value="com.xinyusoft.xshelllib.plugin.SmartPlayerPlugin" />-->
+    <!--</feature>-->
+
+    <feature name="Camera">
+        <param
+            name="android-package"
+            value="org.apache.cordova.camera.CameraLauncher" />
+    </feature>
+
+    <feature name="setClipBoardPlugin">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.setClipBoardPlugin" />
+    </feature>
+
+    <feature name="ConvertToImagePlugin">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.ConvertToImagePlugin" />
+    </feature>
+    <feature name="OpenPDFPlugin">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.OpenPDFPlugin" />
+    </feature>
+
+    <feature name="ToCommentPlugin">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.ToCommentPlugin" />
+    </feature>
+    <feature name="InputPasswordPlugin">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.InputPasswordPlugin" />
+    </feature>
+    <feature name="CheckUpdateAppPlugin">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.CheckUpdateAppPlugin" />
+    </feature>
+    <feature name="ClearCachePlugin">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.ClearCachePlugin" />
+    </feature>
+    <!--打电话插件-->
+    <feature name="CallPhonePlugin">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.CallPhonePlugin" />
+    </feature>
+    <feature name="SelectDialogPlugin">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.SelectDialogPlugin" />
+    </feature>
+
+    <feature name="ShowKeyboardPlugin">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.ShowKeyboardPlugin" />
+    </feature>
+    <feature name="SelectPicturePlugin">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.SelectPicturePlugin" />
+    </feature>
+    <feature name="StatusBar">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.StatusBarPlugin" />
+    </feature>
+    <feature name="PictureBrowserPlugin">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.PictureBrowserPlugin" />
+    </feature>
+
+    <feature name="LiveVideoPlugin">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.LiveVideoPlugin" />
+    </feature>
+
+    <!--数据缓冲问题-->
+    <feature name="DataLocalityPlugin">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.DataLocalityPlugin" />
+    </feature>
+
+    <!--新的方式数据缓冲问题-->
+    <feature name="LocalstoragePlugin">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.MyTuDoPlugin" />
+    </feature>
+
+    <!--爱贝支付插件-->
+    <feature name="IapppayPlugin">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.IappayPlugin" />
+    </feature>
+
+    <feature name="AppNativePlugin">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.AppNativePlugin" />
+    </feature>
+
+    <!--自定义输入框-->
+    <feature name="CommentBoxPlugin">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.InputBoxEidText" />
+    </feature>
+
+    <!--云之讯-->
+    <feature name="CloudNewsAudioAndVideo">
+        <param
+            name="android-package"
+            value="com.xshell.xshelllib.plugin.CloudNewsAudioAndVideo" />
+    </feature>
+
+    <!--<feature name="StatusBar">-->
+    <!--<param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />-->
+    <!--<param name="onload" value="true" />-->
+    <!--</feature>-->
+</widget>

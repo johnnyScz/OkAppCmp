@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="@dimen/dp_10"
+    android:layout_marginRight="5dp"
+    android:background="@drawable/shaper_creat_group"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/dp_10">
+
+
+    <ImageView
+        android:id="@+id/post_film"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:scaleType="fitXY" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/film_name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center|left"
+            android:textColor="@color/mall_color33"
+            android:textSize="@dimen/dp_14"
+            android:textStyle="bold"
+            tools:text="子布局Name" />
+
+        <TextView
+            android:id="@+id/director"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center|left"
+            android:textColor="@color/mall_color66"
+            android:textSize="@dimen/dp_12"
+            tools:text="张艺谋" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,150 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        applicationId "com.xinyu.newdiggtest"
+
+        minSdkVersion 24
+        targetSdkVersion 27
+        versionCode 28
+        versionName "0.2.8"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+
+
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters "armeabi"
+        }
+
+
+    }
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+    }
+    signingConfigs {
+        release {
+            storeFile file('D:\\keystore\\digg\\digg.jks')
+            storePassword "xinyu1220"
+            keyAlias "digg"
+            keyPassword "xinyu1220"
+        }
+    }
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.release
+
+        }
+        release {
+//            minifyEnabled true
+//            shrinkResources true
+            signingConfig signingConfigs.release
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+
+
+
+dependencies {
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    implementation 'me.zhouzhuo.zzimagebox:zz-image-box:1.0.6'
+    compile project(':mylibrary')
+    compile project(':QCode')
+
+    compile project(':XshellLib')
+
+    compile project(':androidStudioLib')
+
+    compile project(':TreeList')
+
+    implementation 'com.alibaba:fastjson:1.1.54.android'
+
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    implementation 'com.android.support:design:27.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+    //retrofit
+    implementation 'com.google.code.gson:gson:2.6.2'
+    //动态权限
+    implementation 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar'
+    //下面两个是RxJava 和 RxAndroid
+    implementation 'io.reactivex:rxjava:1.1.0'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    implementation 'io.reactivex:rxandroid:1.1.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    //配合Rxjava 使用
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    //SmartRefreshLayout加载和刷新控件
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.5'
+    //如果没有特殊header,这行可以不加
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.5'
+    //树状View
+    implementation 'com.github.ZhangHao555:BaseTreeView:v1.4'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:v1.9.7'
+    //    implementation 'com.teprinciple:updateapputils:1.5.1'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.22'
+    implementation 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    implementation 'com.github.gittjy:LoadingDialog:1.0.2'
+    /**
+     *        朋友圈九宫格和浏览
+     */
+    implementation 'com.lzy.widget:ninegridview:0.2.0'
+
+//轮播
+    implementation 'com.youth.banner:banner:1.4.10'
+
+    compile 'com.lzy.widget:imagepicker:0.3.2'
+    //底部导航消息tab
+    implementation 'com.github.chaychan:BottomBarLayout:1.1.2'
+    //PushSDK必须依赖基础组件库，所以需要加入对应依赖
+    implementation 'com.umeng.sdk:common:1.5.3'
+    //PushSDK必须依赖utdid库，所以需要加入对应依赖
+    implementation 'com.umeng.sdk:utdid:1.1.5.3'
+    //PushSDK
+    implementation 'com.umeng.sdk:push:4.2.0'
+    implementation 'com.github.LuckSiege.PictureSelector:picture_library:v2.2.3'
+    //    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    compile 'pub.devrel:easypermissions:0.3.0'
+    compile 'com.jude:easyrecyclerview:4.2.3'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.0.2@aar'
+    implementation files('libs/alipaySdk-20180601.jar')
+    //类似ScrollView 嵌套RecycleView
+    implementation 'in.srain.cube:ptr-load-more:1.0.6'
+    implementation 'com.github.nanchen2251:CompressHelper:1.0.5'
+
+    //其中latest.release指代最新Bugly NDK版本号，也可以指定明确的版本号，例如3.0
+    implementation 'com.google.code.gson:gson:2.2.4'
+    implementation 'liji.library.dev:citypickerview:4.2.1'
+    //    implementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    implementation files('libs/Volley.jar')
+    implementation files('libs/AMap_Search_V6.9.2_20190709.jar')
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+    compile('io.socket:socket.io-client:0.8.3') {
+        // excluding org.json which is provided by Android
+        exclude group: 'org.json', module: 'json'
+    }
+    implementation files('libs/json-lib-2.2.3-jdk15.jar')
+    implementation files('libs/agora-rtc-sdk.jar')
+    implementation files('libs/agora-sig-sdk.jar')
+
+
+}
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs '../XshellLib/libs', 'libs'
+    }
+}

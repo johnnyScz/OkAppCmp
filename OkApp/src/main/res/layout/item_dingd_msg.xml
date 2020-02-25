@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_msg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_15"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/commont"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <com.xinyu.newdiggtest.widget.MarkedImageView
+            android:id="@+id/iv_target_icon"
+            android:layout_width="40dp"
+            android:layout_height="@dimen/dp_40"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@+id/iv_target_icon"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_target"
+                style="@style/textTitlesmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_3"
+                android:text="未命名" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="2018.9.21  9:30"
+                android:textSize="@dimen/dp_12" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_15"
+            android:src="@mipmap/msg_red" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/mycontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/text_color99"
+            android:textSize="@dimen/dp_12"
+            tools:text="马云点赞了" />
+
+
+        <TextView
+            android:id="@+id/commonts_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/praise_item_default"
+            android:visibility="gone"
+            tools:text="看好你哦,加油" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="cc_app_name">彩虹SDK小智版</string>
+    <string name="cc_provider_busy">客服忙，是否等待一会儿？</string>
+    <string name="cc_wait">等待</string>
+    <string name="cc_not_wait">不等待</string>
+    <string name="cc_share_camera">客服请求打开您的手机摄像头，是否同意？</string>
+    <string name="cc_open">同意</string>
+    <string name="cc_not_open">不同意</string>
+    <string name="cc_float_view_text">远程服务中&#8230;</string>
+    <string name="cc_login_success_tip">您好, 客服%1$s号为您服务!</string>
+    <string name="cc_connect_success_voice_tip">您的语音将会传输给客服，您可以通过悬浮窗口中的如下按钮，开启或关闭语音：</string>
+    
+    <string name="cc_default_score">3分</string>
+    <string name="cc_satisfaction_for_service">请您为我们的服务打分：</string>
+    <plurals name="cc_rating_scores">
+        <item quantity="one">1 分</item>
+        <item quantity="other">"<xliff:g id="COUNT">%d</xliff:g> 分"</item>
+    </plurals>
+    
+    <string name="cc_desktop_shared">桌面共享</string>
+    <string name="cc_desktop_shared_tip">是否同意桌面共享？\n如果同意，表示您接受了所有相关的法律协议，客服人员可以远程控制您的桌面；在桌面共享过程中，您可以通过如下按钮，暂停或恢复桌面共享：</string>
+    <string name="cc_stop_service">是否停止此次服务？</string>
+    <string name="cc_switch_provider_dialog_msg">正在为您转接中...</string>
+    <string name="cc_turn_on">开启语音</string>
+    <string name="cc_turn_off">关闭语音</string>
+    <string name="cc_video_pause">暂停桌面共享</string>
+    <string name="cc_video_resume">恢复桌面共享</string>
+    <string name="cc_take_picture_success">拍照成功</string>
+    <string name="cc_take_picture_failed">拍照失败</string>
+    
+    <!-- <string name="cc_sdk_update_title">彩虹SDK小智更新提示</string> -->
+    <string name="cc_sdk_update_tip">本应用集成的彩虹SDK小智版版本过低，需要升级到集成了新版本彩虹SDK小智版本的应用，否则无法正常使用该SDK提供的功能。</string>
+    <string name="cc_sdk_update_new_version">新版本:</string>
+    <string name="cc_sdk_update_content">更新内容:</string>
+    <string name="cc_continue">继续</string>
+    <string name="cc_stop">停止</string>
+  
+    <string name="cc_provider_service">客服   %1$s 为您服务</string>
+    <string name="cc_recorder_perm_ban">当前应用录音权限被禁用，无法为你提供远程服务，请打开后重试</string>
+    <string name="cc_init_flow_text">0MB</string>
+    
+    <string name="cc_connecting_provider">正在为您连接客服，请您稍候</string>
+    <string name="cc_connect_provider_timeout">连接超时</string>
+    <string name="cc_connect_exception">连接异常</string>
+    
+    <string name="cc_connect_already_start">服务早已启动</string>
+    <string name="cc_connect_provider_succ">连接成功</string>
+    <string name="cc_connect_provider_failed">连接失败</string>
+    <string name="cc_provider_offline">客服不在线</string>
+    <string name="cc_provider_no_found">客服不存在</string>
+    <string name="cc_server_company_no_found">平台厂商分组不存在</string>
+    
+    <string name="cc_voice_connect_failed">语音连接失败</string>
+    <string name="cc_voice_connect_timeout">语音连接超时</string>
+    <string name="cc_voice_connect_exception">语音连接异常</string>
+    <string name="cc_voice_connect_succ">语音连接成功</string>
+    <string name="cc_voice_provider_failed">客服语音断开</string>
+    <string name="cc_voice_close">语音服务关闭</string>
+    
+    <string name="cc_video_connect_failed">视频连接失败</string>
+    <string name="cc_video_connect_timeout">视频连接超时</string>
+    <string name="cc_video_connect_exception">视频连接异常</string>
+    <string name="cc_video_connect_succ">视频连接成功</string>
+    <string name="cc_video_close">视频服务关闭</string>
+    
+    <string name="cc_camera_connect_failed">摄像头连接失败</string>
+    <string name="cc_camera_connect_timeout">摄像头连接超时</string>
+    <string name="cc_camera_connect_exception">摄像头连接异常</string>
+    <string name="cc_camera_open_failed">摄像头打开失败</string>
+    
+    <string name="cc_back_camera">开启后置摄像头成功</string>
+    <string name="cc_front_camera">开启前置摄像头成功</string>
+    <string name="cc_open_camera_tips">开启%1$s摄像头成功</string>
+    <string name="cc_close_camera_tips">关闭摄像头成功</string>
+    
+    <string name="cc_client_edge_out">与服务器断开</string>
+    <string name="cc_provider_leave">客服离开</string>
+    <string name="cc_switch_provider_succ">成功转接给%1$s客服</string>
+    <string name="cc_switch_provider_failed">转接客服失败</string>
+    
+    <string name="cc_network_exception">网络异常</string>
+    <string name="cc_camera_pause">暂停远程摄像头</string>
+    <string name="cc_camera_resume">恢复远程摄像头</string>
+    
+    <string name="cc_provider_busy_number">客服忙，是否等待？前面等待人数：%1$s</string>
+    <string name="cc_waiting_idle_provider">正在等待空闲客服，前面等待人数：%1$s</string>
+    <string name="cc_unknow_number">*</string>
+</resources>

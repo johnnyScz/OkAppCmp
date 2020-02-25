@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10">
+
+
+        <ImageView
+            android:id="@+id/post_film"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:scaleType="fitXY" />
+
+
+        <TextView
+            android:id="@+id/film_name"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:textColor="@color/mall_color33"
+            android:textSize="@dimen/dp_14"
+            android:textStyle="bold"
+            tools:text="子布局Name" />
+
+        <ImageView
+            android:id="@+id/gochat"
+            android:layout_width="20dp"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:src="@mipmap/msg" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#cccccc" />
+</RelativeLayout>
+
+

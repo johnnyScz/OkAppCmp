@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/dp_20"
+    android:background="@color/bg_main_layout"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            style="@style/textTitlesmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="取消" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="打卡心情" />
+
+        <TextView
+            android:id="@+id/tv_save"
+            style="@style/textTitlesmallYellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:text="打卡" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@color/mall_colorFA"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_daka"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            tools:text="好123" />
+
+        <EditText
+            android:id="@+id/et_input_moon"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="输入打卡心情.记录"
+            android:textSize="@dimen/dp_14" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:orientation="vertical">
+
+            <me.zhouzhuo.zzimagebox.ZzImageBox
+                android:id="@+id/zz_image_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:zib_img_default="@drawable/iv_default"
+                app:zib_img_deletable="true"
+                app:zib_img_delete="@drawable/iv_delete"
+                app:zib_img_padding="5dp"
+                app:zib_img_size_one_line="3"
+                app:zib_left_margin="20dp"
+                app:zib_max_line="3"
+                app:zib_right_margin="20dp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

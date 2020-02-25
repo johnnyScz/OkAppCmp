@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_10">
+
+
+    <TextView
+        android:id="@+id/chat_item_date"
+        style="@style/text_body"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/chat_item_header"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:scaleType="fitXY" />
+
+
+        <LinearLayout
+            android:id="@+id/chat_item_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/chat_item_header"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/receive_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                tools:text="我是邓丽君" />
+
+
+            <RelativeLayout
+                android:id="@+id/name_below"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left">
+
+                <com.xinyu.newdiggtest.ui.chat.GifTextView
+                    android:id="@+id/chat_item_content_text"
+                    style="@style/text_subhead_black"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/shaper_creat_group"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="4dp"
+                    android:paddingRight="7dp"
+                    android:paddingBottom="@dimen/dp_4" />
+
+                <com.xinyu.newdiggtest.ui.chat.BubbleImageView
+                    android:id="@+id/chat_item_content_image"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    app:angle="6dp"
+                    app:arrowHeight="8dp"
+                    app:arrowLocation="left"
+                    app:arrowPosition="15dp"
+                    app:arrowWidth="10dp" />
+
+                <RelativeLayout
+                    android:id="@+id/left_ll_voice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true">
+
+                    <ImageView
+                        android:id="@+id/chat_item_voice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/shaper_creat_group"
+                        android:paddingLeft="@dimen/dp_15"
+                        android:paddingTop="5dp"
+                        android:paddingRight="@dimen/dp_15"
+                        android:paddingBottom="5dp"
+                        android:src="@mipmap/icon_voice_left3" />
+
+                    <TextView
+                        android:id="@+id/chat_item_voice_time"
+                        style="@style/text_body"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_toRightOf="@id/chat_item_voice"
+                        android:text="30s" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_link"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="left"
+                android:layout_marginRight="80dp"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_15"
+                android:paddingBottom="@dimen/dp_15"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_type"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_20" />
+
+
+                <TextView
+                    android:id="@+id/share_content"
+                    style="@style/textTitlesmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_type"
+                    android:paddingLeft="@dimen/dp_10"
+                    tools:text="足球#10.12-12.09#" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_parent"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:id="@+id/ll_other1"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="7dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/week_no1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/dp_13"
+            tools:text="日" />
+
+        <TextView
+            android:id="@+id/day_no1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:textSize="@dimen/dp_13"
+            tools:text="27" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_btn"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="7dp"
+        android:background="@drawable/inco_bg"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/today2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="今"
+            android:textSize="@dimen/dp_13" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_other3"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="7dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/week_no3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/dp_13"
+            tools:text="日" />
+
+        <TextView
+            android:id="@+id/day_no3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:textSize="@dimen/dp_13"
+            tools:text="27" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_other4"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="7dp"
+
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/week_no4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/dp_13"
+            tools:text="日" />
+
+        <TextView
+            android:id="@+id/day_no4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:textSize="@dimen/dp_13"
+            tools:text="27" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_other5"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="7dp"
+
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/week_no5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/dp_13"
+            tools:text="日" />
+
+        <TextView
+            android:id="@+id/day_no5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:textSize="@dimen/dp_13"
+            tools:text="27" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_other6"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="7dp"
+
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/week_no6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/dp_13"
+            tools:text="日" />
+
+        <TextView
+            android:id="@+id/day_no6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:textSize="@dimen/dp_13"
+            tools:text="27" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_other"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/week_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/dp_13"
+            tools:text="日" />
+
+        <TextView
+            android:id="@+id/day_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:textSize="@dimen/dp_13"
+            tools:text="27" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/dp_20"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="top">
+
+
+        <ImageView
+            android:id="@+id/icon_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="收支详情" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/sub_title"
+            style="@style/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_10"
+            android:text="支付成功" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:background="@color/while_most_color" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:background="@color/mall_white"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="@dimen/dp_12"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="当前状态"
+                android:textColor="@color/text_aaa" />
+
+            <TextView
+                android:id="@+id/curent_state"
+                style="@style/textTitlesmall1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/dp_11"
+                android:gravity="center|right"
+
+                android:textSize="@dimen/dp_15"
+                tools:text="范冰冰" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="@dimen/dp_12"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="交易编号"
+                android:textColor="@color/text_aaa" />
+
+            <TextView
+                android:id="@+id/order_no"
+                style="@style/textTitlesmall1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/dp_11"
+                android:gravity="center|right"
+                android:textSize="@dimen/dp_12"
+                tools:text="定期健身" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="@dimen/dp_12"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="交易时间"
+                android:textColor="@color/text_aaa" />
+
+            <TextView
+                android:id="@+id/order_time"
+                style="@style/textTitlesmall1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/dp_11"
+
+                android:gravity="center|right"
+
+                android:textSize="@dimen/dp_15"
+                tools:text="定期健身" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="@dimen/dp_12"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="交易类型"
+                android:textColor="@color/text_aaa" />
+
+            <TextView
+                android:id="@+id/order_type"
+                style="@style/textTitlesmall1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/dp_11"
+                android:gravity="center|right"
+
+                android:textSize="@dimen/dp_15"
+                tools:text="定期健身" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="@dimen/dp_12"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="结算渠道"
+                android:textColor="@color/text_aaa" />
+
+            <TextView
+                android:id="@+id/deal_type"
+                style="@style/textTitlesmall1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/dp_11"
+                android:gravity="center|right"
+
+                android:textSize="@dimen/dp_15"
+                tools:text="定期健身" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="@dimen/dp_12"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="收支类型 "
+                android:textColor="@color/text_aaa" />
+
+            <TextView
+                android:id="@+id/income_type"
+                style="@style/textTitlesmall1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/dp_11"
+                android:gravity="center|right"
+
+                android:textSize="@dimen/dp_15"
+                tools:text="定期健身" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_15"
+        android:background="@color/while_most_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:background="@color/mall_white"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+
+        <LinearLayout
+            android:id="@+id/pay_ll"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="@dimen/dp_12"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="处理状态"
+                android:textColor="@color/text_aaa" />
+
+            <TextView
+                android:id="@+id/deal_state"
+                style="@style/textTitlesmall1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/dp_11"
+                android:gravity="center|right"
+
+                android:textSize="@dimen/dp_15"
+                tools:text="范冰冰" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_target"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="@dimen/dp_12"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="关联目标 "
+                android:textColor="@color/text_aaa" />
+
+            <TextView
+                android:id="@+id/asotion_target"
+                style="@style/textTitlesmall1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/dp_11"
+                android:gravity="center|right"
+
+                android:textSize="@dimen/dp_15"
+                tools:text="定期健身" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_daka"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="@dimen/dp_12"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="关联打卡"
+                android:textColor="@color/text_aaa" />
+
+            <TextView
+                android:id="@+id/asotion_daka"
+                style="@style/textTitlesmall1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/dp_11"
+
+                android:gravity="center|right"
+
+                android:textSize="@dimen/dp_15"
+                tools:text="定期健身" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

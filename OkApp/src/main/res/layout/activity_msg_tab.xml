@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/dp_20"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:src="@mipmap/back_img" />
+
+            <com.flyco.tablayout.SlidingTabLayout
+                android:id="@+id/target_tab"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                tl:tl_indicator_color="@color/mall_colorPrimary"
+                tl:tl_indicator_height="3dp"
+                tl:tl_textSelectColor="@color/mall_colorPrimary"
+                tl:tl_textUnselectColor="@color/mall_color_66"
+                tl:tl_textsize="16dp" />
+        </LinearLayout>
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/target_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+</LinearLayout>

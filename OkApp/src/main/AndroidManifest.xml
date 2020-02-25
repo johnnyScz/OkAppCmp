@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xinyu.newdiggtest">
+
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+
+    <!-- 读写手机状态和身份 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 录音权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <application
+        android:name="com.xinyu.newdiggtest.ui.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.xinyu.newdiggtest.h5.LoadingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.xinyu.newdiggtest.map.AmapActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.PreLoginActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.TargetGroupActivity" />
+
+
+        <activity
+            android:name="com.xinyu.newdiggtest.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity
+            android:name="com.xinyu.newdiggtest.wxapi.WXPayEntryActivity"
+            android:exported="true" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.fragment.AcountInfoActivity" />
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="a1f64fe17c760aceb46ebc4f3dc1f37c" />
+
+        <activity
+            android:name="com.xinyu.newdiggtest.ui.Digg.LoginActivity"
+            android:launchMode="singleTask" />
+        <!--改动 -->
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.CreatGroupActivity" />
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.GroupSuccedActivity" />
+
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.fragment.TargetDetailActivity" />
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.fragment.RewardActivity" />
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.fragment.TargetSuccedActivity" />
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.fragment.PayPwdActivity" />
+        <activity
+            android:name="com.xinyu.newdiggtest.ui.Digg.fragment.PaySuccedActivity"
+            android:launchMode="singleTask" />
+
+
+        <activity android:name="com.xinyu.newdiggtest.bigq.ToDoEditActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.fragment.FeixinActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.SelfActivity" />
+
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.fragment.QunMemberAddReduceActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.fragment.GroupMbDeletActivity" />
+
+
+        <activity
+            android:name="com.xinyu.newdiggtest.ui.LeakActivity"
+            android:theme="@style/AppTheme.Transparent" />
+
+
+        <activity android:name="com.xinyu.newdiggtest.h5.WebViewActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.FormReportActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.fragment.MyselfTreeActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.adapter.viewhelper.TreeActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.fragment.OkSecondActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.fragment.RelationTodoActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.fragment.EditGroupNameActity" />
+
+        <activity android:name="com.xinyu.newdiggtest.office.OfficeX5CoreActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.h5.OfficeWebViewActivity" />
+
+
+        <activity android:name="com.xinyu.newdiggtest.map.LatlngActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.calendar.callen.CalendarActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.chanel.TopicChanelActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.fragment.BdWebViewActivity" />
+
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.fragment.FileActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.fragment.FileWebViewActivity" />
+
+
+        <activity
+            android:name="com.xinyu.newdiggtest.bigq.ToDoActivity"
+            android:theme="@style/MyFullScreen" />
+
+
+        <activity
+            android:name="com.xinyu.newdiggtest.ui.Digg.HomeDiggActivity"
+            android:launchMode="singleTask" />
+
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.fragment.TodoAddActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.fragment.FilmListActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.ExcutorSelectActivity" />
+
+        <!--<activity android:name=".ui.Digg.fragment.CommonQcodeActivity" />-->
+
+        <activity android:name="com.xinyu.newdiggtest.bigq.AddDoneActivity" />
+
+        <activity
+            android:name="com.xinyu.newdiggtest.ui.PictLookActivity"
+            android:launchMode="singleTop" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.MySpaceActivity" />
+
+
+        <activity android:name="com.xinyu.newdiggtest.ui.DakaInfoActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.fragment.PersonCommonEditActity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.fragment.SelectGroupActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.RewardFineActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.fragment.RulesInfoActivity" />
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.fragment.CashActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.fragment.ZfbActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.fragment.FeedBackActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.fragment.NoreadMsgActivity" />
+
+
+        <activity android:name="com.xinyu.newdiggtest.ui.chat.SuiShouNoteActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.bigq.BindMobileActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.fragment.QcodeInviteActivity" />
+
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.fragment.ChargeActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.fragment.FocusSuccedActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.fragment.MsgNewTabActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.login.AppLoginActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.login.AppRegisterActivity" />
+
+
+        <activity
+            android:name="com.xinyu.newdiggtest.ui.Digg.fragment.ChannelCommentActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.fragment.ChanPraiseListActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.fragment.PersonSexEditActity" />
+
+        <activity
+            android:name="com.xinyu.newdiggtest.ui.Digg.fragment.CardInfoActivity"
+            android:screenOrientation="portrait" />
+
+
+        //----------------exported true 或false 需要调试----------------------------
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"></activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"></activity>
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.GuidActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.fragment.DeletMemberActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.fragment.CaputureActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.fragment.ChargeConfirmActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.TargetNewInfoActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.fragment.Public2PrivateActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.fragment.ChildTodoActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.NewEditTargetActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.calendar.TodoNewHomeActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.fragment.GroupBusiActivity" />
+
+        <activity
+            android:name="com.xinyu.newdiggtest.ui.Digg.fragment.InsertCardActivity"
+            android:windowSoftInputMode="stateHidden" />
+
+        <!--<activity-->
+        <!--android:name="com.xinyu.newdiggtest.h5.H5MainActivity"-->
+        <!--android:launchMode="singleTask"-->
+        <!--android:theme="@style/MyFullScreen" />-->
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.fragment.SxSwiptActivity" />
+
+
+        <activity android:name="com.xinyu.newdiggtest.h5.TestActivity" />
+
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.fragment.CardListActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.login.BangMobileActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.h5.H5MainActivity" />
+
+        <activity
+            android:name="com.xinyu.newdiggtest.ui.Digg.fragment.PersonFriendListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <!--<activity android:name=".adapter.viewhelper.TempActivity" />-->
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.fragment.AccountLoginActivity" />
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity android:name="com.xinyu.newdiggtest.ui.chat.ChatCompanyActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.bigq.ProjectManagerActivity" />
+
+        <activity
+            android:name="com.xinyu.newdiggtest.h5.WebViewUrlActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity android:name="com.xinyu.newdiggtest.adapter.SingleLayoutTreeActivity" />
+
+        <!--<activity android:name="com.xinyu.newdiggtest.adapter.viewhelper.ViewHelperActivity" />-->
+
+
+        <activity android:name="com.xinyu.newdiggtest.bigq.TodoInfoListActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.CheckActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.ProcessActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.fragment.OkRInfoActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.login.AppRegisterBangWxActivity" />
+
+
+        <activity
+            android:name="com.xinyu.newdiggtest.app.HomeAppActivity"
+            android:launchMode="singleTask" />
+
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.fragment.CompanyListActivity" />
+
+
+        <!-- 视频通话-->
+        <activity android:name="com.xinyu.newdiggtest.agra.HostActivity" />
+        <activity android:name="com.xinyu.newdiggtest.agra.BeCallActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.ui.Digg.fragment.BiaoInfoActivity" />
+
+        <activity android:name="com.xinyu.newdiggtest.adapter.viewhelper.TotalMemberActivity" />
+
+
+        <service android:name="com.xinyu.newdiggtest.h5.H5Service" />
+
+        <service android:name="com.xinyu.newdiggtest.h5.CommonService" />
+
+        <service android:name="com.xinyu.newdiggtest.h5.ChannelService" />
+
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.xinyu.newdiggtest"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <!--元数据-->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5c049fd0f1f556fffc000082" />
+        <!-- Channel ID用来标识App的推广渠道，作为推送消息时给用户分组的一个维度。-->
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Unknown" />
+
+        <meta-data
+            android:name="CCHELPER_APPKEY"
+            android:value="8c6ebd0f8be58a09ffe5329ef20ab967" />
+
+        <service android:name="com.amap.api.location.APSService" />
+
+
+    </application>
+
+</manifest>

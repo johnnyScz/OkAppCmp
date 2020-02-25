@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<config>
+
+    <html-update-time time="2020-12012358" />
+
+    <android>
+        <class-home path="com.xinyu.newdiggtest.h5.H5MainActivity" />
+
+        <!--测试与正式环境一样-->
+        <xversion-html-name value="UniApp-mycard" />
+        <xversion-app-name value="ok_company" />
+        <xversion-apk-name value="ok_company.apk" />
+
+        <!--测试环境-->
+        <xversion-update-url value="http://120.55.187.58:8085/xversion/ESBServlet?command=vms.getChangedListAction" />
+        <xversion-download-url value="http://120.55.187.58:8085/xversion/xvfiles/" />
+
+        <!--正式环境-->
+        <!--<xversion-update-url value="http://121.40.148.145/ESBServlet?command=vms.getChangedListAction" />-->
+        <!--<xversion-download-url value="http://121.40.148.145/" />-->
+
+
+    </android>
+
+
+</config>

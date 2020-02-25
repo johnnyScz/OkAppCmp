@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.xinyu.newdiggtest.utils.NoScrollViewPager
+        android:id="@+id/vp_home"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.chaychan.library.BottomBarLayout
+        android:id="@+id/bblayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.chaychan.library.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:iconNormal="@mipmap/daka"
+            app:iconSelected="@mipmap/daka_select"
+            app:itemText="待办"
+            app:itemTextSize="@dimen/dp_12"
+            app:textColorNormal="@color/mall_color33"
+            app:textColorSelected="@color/mall_orange_fba" />
+
+
+        <com.chaychan.library.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:iconNormal="@mipmap/group"
+            app:iconSelected="@mipmap/group_select"
+            app:itemText="联系人"
+            app:itemTextSize="@dimen/dp_12"
+            app:textColorNormal="@color/mall_color33"
+            app:textColorSelected="@color/mall_orange_fba" />
+
+
+        <com.chaychan.library.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:iconNormal="@mipmap/me"
+            app:iconSelected="@mipmap/me_select"
+            app:itemText="频道"
+            app:itemTextSize="@dimen/dp_12"
+            app:textColorNormal="@color/mall_color33"
+            app:textColorSelected="@color/mall_orange_fba" />
+
+
+        <com.chaychan.library.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:iconNormal="@mipmap/self"
+            app:iconSelected="@mipmap/self_select"
+
+            app:itemText="我"
+            app:itemTextSize="@dimen/dp_12"
+            app:textColorNormal="@color/mall_color33"
+            app:textColorSelected="@color/mall_orange_fba" />
+
+    </com.chaychan.library.BottomBarLayout>
+
+</LinearLayout>

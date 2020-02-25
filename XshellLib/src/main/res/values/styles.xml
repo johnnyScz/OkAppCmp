@@ -1,0 +1,129 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+        -->
+    </style>
+
+    <!--微信支付-->
+    <style name="NavPage">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <!-- <item name="android:background">@drawable/nav_page</item> -->
+        <item name="android:background">#FFE1E8EB</item>
+    </style>
+
+
+    <!-- Application theme. -->
+    <style name="AppTheme1" parent="AppBaseTheme">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:colorBackground">@android:color/white</item>
+    </style>
+
+    <!-- xinyusoft  start -->
+    <style name="Theme" parent="android:Theme.Holo.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:colorBackground">@android:color/white</item>
+    </style>
+
+    <style name="AlexNoAniTheme" parent="android:Theme.Holo.Light.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/myNoAnimation</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="myNoAnimation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@anim/xinyusoft_activity_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/xinyusoft_activity_right_out</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+
+    <!--<style name="noAnimation">-->
+
+    <!--&lt;!&ndash;<item name="activityOpenEnterAnimation">@anim/activity_open_enter</item>&ndash;&gt;-->
+    <!--&lt;!&ndash;<item name="activityOpenExitAnimation">@anim/activity_open_exit</item>&ndash;&gt;-->
+    <!--&lt;!&ndash;<item name="activityCloseEnterAnimation">@anim/activity_close_enter</item>&ndash;&gt;-->
+    <!--&lt;!&ndash;<item name="activityCloseExitAnimation">@anim/activity_close_exit</item>&ndash;&gt;-->
+
+    <!--<item name="android:activityOpenEnterAnimation">@anim/xinyusoft_activity_right_in</item>-->
+    <!--<item name="android:activityOpenExitAnimation">@anim/xinyusoft_activity_left_out</item>-->
+    <!--<item name="android:activityCloseEnterAnimation">@anim/xinyusoft_activity_left_in</item>-->
+    <!--<item name="android:activityCloseExitAnimation">@android:anim/activity_close_exit</item>-->
+    <!--<item name="android:taskOpenEnterAnimation">@null</item>-->
+    <!--<item name="android:taskOpenExitAnimation">@null</item>-->
+    <!--<item name="android:taskCloseEnterAnimation">@null</item>-->
+    <!--<item name="android:taskCloseExitAnimation">@null</item>-->
+    <!--<item name="android:taskToFrontEnterAnimation">@null</item>-->
+    <!--<item name="android:taskToFrontExitAnimation">@null</item>-->
+    <!--<item name="android:taskToBackEnterAnimation">@null</item>-->
+    <!--<item name="android:taskToBackExitAnimation">@null</item>-->
+    <!--</style>-->
+
+
+    <style name="mystyle" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/xinyusoft_dialog_enter</item>
+        <item name="@android:windowExitAnimation">@anim/xinyusoft_dialog_exit</item>
+    </style>
+
+    <style name="ButtonGreen" parent="@android:style/Widget.Button">
+        <item name="android:textSize">18.0sp</item>
+    </style>
+
+    <style name="ButtonRed" parent="@android:style/Widget.Button">
+        <item name="android:textSize">18.0sp</item>
+
+    </style>
+
+    <style name="xinyusoft_dialog_fullscreen" parent="@android:style/Theme.Dialog">
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 遮罩层 -->
+        <item name="android:backgroundDimAmount">0.5</item>
+    </style>
+    <!-- xinyusoft  end -->
+
+
+    <!-- 自定义仿IOS的AlertDialog的样式 -->
+    <style name="AlertDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+
+</resources>

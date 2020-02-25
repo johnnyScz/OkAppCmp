@@ -1,0 +1,62 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">OK!测试</string>
+    <string name="mall_app_logo">AndroidFrame</string>
+    <string name="mall_shop_mall_app_name">module_shop_mall</string>
+    <string name="mall_home_page">打卡</string>
+    <string name="mall_home_shop">商品</string>
+    <string name="mall_home_cart">购物车</string>
+    <string name="mall_home_knowledge_system">目标</string>
+    <string name="mall_home_navigation">群组</string>
+    <string name="mall_home_seach">发现</string>
+    <string name="mall_home_self">我</string>
+
+    <string name="loading_dialog">加载中...</string>
+    <string name="wx_invite">发微信链接邀请成员</string>
+
+    <string name="target_date_tip">创建时间不能早于当天！</string>
+
+    <string name="login_code_no">验证码过气或错误,请重新输入</string>
+
+    <string name="target_info">结束时间不能早于当前时间</string>
+
+    <string name="login_error">登录失败,请重试或检查网络</string>
+
+    <string name="network_error">服务异常,请重试或检查网络</string>
+    <string name="mall_drawer_open">Open drawer</string>
+    <string name="mall_drawer_close">Close drawer</string>
+
+    <string name="cush_alarm">管理员将在3个工作日内完成提现审核,并打款至支付宝账户。</string>
+
+
+    //目标
+    <string name="creat_group">新建目标</string>
+    <string name="app_help">联系我们:okservice@xinyusoft.com</string>
+    <string name="app_help2">芯与科技 版权所有</string>
+
+
+    <string name="vip_yes">查看我的推荐好友>></string>
+    <string name="vip_no">开通VIP享有更多OK!特权</string>
+
+    <string name="feed_hint">在这里输入你的意见和建议,我们将赠送你尊享VIP</string>
+
+    <string name="todo_hint">请输入你的日工作计划(1000字以内)</string>
+
+    <string name="hint_todo">请输入子待办内容...</string>
+
+    <string name="feed_back">感谢你的宝贵建议,你的建议将会被开发人员认真阅读并作为后期的重要参考！</string>
+
+    <string name="guid_tx1">Ok!是一款个人事务和工作事务</string>
+    <string name="guid_tx2">集成管理的工具,希望OK！给您带来</string>
+    <string name="guid_tx3">便捷，高效和愉悦。</string>
+
+    <string name="agora_app_id">bc52ceefe5ef4c0d998ca65ad84581a3</string>
+
+    <string name="test_info">fsafsafa</string>
+
+    <string name="rigester_info">您好,请在下方注册您的基本信息</string>
+    <string name="rigester_wx">.您将授权OK!获取你的微信头像,地区,性别信息。</string>
+
+    <string name="tip_wx">绑定微信后下次登录可以尝试微信扫码登录哦~</string>
+
+
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/cc_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15.0dip"
+            android:src="@drawable/float_view_icon" />
+
+        <ImageButton
+            android:id="@+id/cc_voiceBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48dip"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/cc_voip_off" />
+
+        <ImageButton
+            android:id="@+id/cc_floatBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="98.0dip"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/cc_disconnect_button_bg" />
+
+        <ImageButton
+            android:id="@+id/cc_floatBtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="30.0dip"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/cc_button_grey_play" />
+        <ImageButton
+            android:id="@+id/cc_cameraBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="70.0dip"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/cc_camera_grey_stop" />
+
+        <TextView
+            android:id="@+id/cc_flowText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="105.0dip"
+            android:ellipsize="middle"
+            android:gravity="center"
+            android:maxWidth="100dp"
+            android:singleLine="true"
+            android:text="@string/cc_init_flow_text"
+            android:textColor="#ff0000"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/cc_providerId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="125.0dip"
+            android:gravity="center"
+            android:textColor="#636363"
+            android:textSize="12sp" />
+
+        <SurfaceView
+            android:id="@+id/cc_surfaceView"
+            android:layout_marginTop="28dp"
+            android:layout_width="69dp"
+            android:visibility="gone"
+            android:layout_height="69dp" />
+
+</FrameLayout>

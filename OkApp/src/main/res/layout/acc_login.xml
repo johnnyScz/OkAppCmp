@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4fa"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="100dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:src="@mipmap/back_img" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="账号登录"
+            android:textColor="@color/mall_color33"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/shaper_creat_group"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/login_phone" />
+
+        <EditText
+            android:id="@+id/edt_phone"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:focusableInTouchMode="true"
+            android:hint="请输入账号"
+            android:maxLength="11"
+            android:textCursorDrawable="@null"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/ll_pwd"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/shaper_creat_group">
+
+        <View
+            android:id="@+id/inco_left"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/login_password" />
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/inco_left"
+            android:background="@null"
+            android:focusableInTouchMode="true"
+            android:hint="请输入密码"
+            android:inputType="numberPassword"
+            android:maxLength="10"
+            android:textCursorDrawable="@null"
+            android:textSize="13dp" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_error_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="手机号码不正确，请重新输入！"
+        android:textColor="@color/mall_red"
+        android:textSize="@dimen/sp_14"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btn_login"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_40"
+        android:background="@drawable/btn_login_select"
+        android:text="登 录"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginBottom="50dp">
+
+
+        <TextView
+            android:id="@+id/top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="您可以发送“申请登记账号”+手机号码，"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="至邮箱：okservice@xinyusoft.com获取OK!账号"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

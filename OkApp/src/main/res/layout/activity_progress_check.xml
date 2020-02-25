@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/dp_20"
+    android:background="@color/bg_main_layout"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="top">
+
+
+        <ImageView
+            android:id="@+id/icon_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            style="@style/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="评定" />
+
+        <ImageView
+            android:id="@+id/more_info"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_15"
+            android:scaleType="fitCenter"
+            android:src="@drawable/info" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="@dimen/dp_20"
+        android:padding="@dimen/dp_20">
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@+id/iv_head"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/textTitleSecond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="陈机量" />
+
+            <TextView
+                android:id="@+id/tg_info"
+                style="@style/textTitlesmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="5dp"
+                android:text="#读书 10.22-11.04#" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp">
+
+        <LinearLayout
+            android:id="@+id/ll_check_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/check"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="@dimen/dp_20"
+
+                android:background="@drawable/shaper_finish0_checkbox"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center" />
+
+            <CheckBox
+                android:id="@+id/check60"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="@dimen/dp_20"
+
+                android:background="@drawable/shaper_finish60_checkbox"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center" />
+
+            <CheckBox
+                android:id="@+id/check100"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/shaper_finished_checkbox"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_commit"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/dp_40"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/btn_login_select"
+        android:text="提 交"
+        android:textColor="@color/mall_color33"
+        android:textSize="16sp" />
+
+</LinearLayout>

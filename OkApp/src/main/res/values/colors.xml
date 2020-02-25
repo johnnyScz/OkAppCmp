@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mall_colorPrimary">#F49423</color>
+    <color name="mall_colorPrimaryDark">#F49423</color>
+    <color name="mall_colorAccent">#FF8705</color>
+    <color name="mall_color_66">#666666</color>
+    <color name="while_most_color">#e4e4e4</color>
+    <color name="text_orange">#FBA562</color>
+
+    <color name="red_color">#ff7469</color>
+    <color name="light_orange">#FFD330</color>
+
+    <color name="lichengbei">#3AAAA8</color>
+
+
+    <color name="caleader_worm">#FFF3E7</color>
+
+    <color name="im_font_color_text_hint">#abb1b6</color>
+
+    <color name="praise_item_default">#333333</color>
+    <color name="praise_item_selector_default">#cccccc</color>
+
+    <color name="bg_itme">#E9F0F2</color>
+
+    <color name="pop_transparent">#80333333</color>
+
+    <color name="daka_icon_bg">#E9F0F2</color>
+
+    <color name="blue_takephoto">#993B98FF</color>
+
+    <color name="mall_yellow">#f39c12</color>
+    <color name="mall_grey">#cccccc</color>
+    <color name="mall_light_green">#3fc75f</color>
+    <color name="mall_light_yellow">#e7c054</color>
+    <color name="mall_blue">#fff</color>
+
+    <color name="bg_ed">#F3F7F8</color>
+    <color name="card_bac">#f7f3f3</color>
+    <color name="mall_mainColor">#FD8501</color>
+    <color name="mall_orange_fba">#FBA135</color>
+
+    <color name="mall_windowBg">#F8F8F8</color>
+    <color name="mall_white">#FFFFFF</color>
+    <color name="mall_red">#FF0000</color>
+    <color name="mall_color66">#666666</color>
+
+    <color name="text_line">#FBF5EC</color>
+
+    <color name="text_color99">#999999</color>
+
+
+    <color name="text_aaa">#aaa</color>
+
+    <color name="mall_color99">#444</color>
+    <color name="gray_color99">#999999</color>
+    <color name="mall_color33">#333333</color>
+    <color name="mall_colorDD">#DDDDDD</color>
+
+    <color name="alertdialog_line">#DDDDDD</color>
+
+
+    <color name="mall_color88">#888888</color>
+
+    <color name="mall_colorCC">#CCCCCC</color>
+    <color name="mall_colorFA">#FAFAFA</color>
+    <color name="mall_translucent">#26000000</color>
+    <color name="mall_color_cc000">#cc000000</color>
+    <color name="mall_account_color_orange_f59">#FD8501</color>
+    <color name="mall_colorFEFF">#FEFEFF</color>
+    <color name="mall_colorE75">#E75353</color>
+    <color name="windowBg">#F8F8F8</color>
+    <color name="bar_grey">#ffCCCCCC</color>
+    <color name="button_blue_press">#FFD330</color>
+
+    <color name="button_vip">#FD8501</color>
+
+    <color name="button_green">#43B45A</color>
+
+
+    <color name="blue_vip">#4196F8</color>
+
+    <color name="blue_photo">#0F73ED</color>
+
+
+    <color name="vip_bg1">#FBF5EC</color>
+
+    <color name="button_blue">#FFba0b</color>
+    <color name="bg_main_layout">#F4f9fa</color>
+    <color name="line_color">#F6F8F9</color>
+    <color name="line_color1">#e5ebed</color>
+    <color name="line_light">#f6f8f9</color>
+    <color name="target_gray">#D3DCDF</color>
+
+    <color name="praise_item">#8290AF</color>
+
+    <color name="yang_red">#FF4047</color>
+
+    <color name="fine_lan">#5BA8A7</color>
+
+
+    <!-- 其它背景色或分割线相关 -->
+    <color name="bg_content">#f3f3f3</color>
+    <color name="divider_line">#d9d9d9</color>
+
+    <!-- 字体色 -->
+    <color name="text_title">#1b1b1b</color>
+    <color name="text_content">#818181</color>
+    <color name="text_sub">#919191</color>
+    <color name="text_hint">#c7c7c7</color>
+    <color name="text_black">#404040</color>
+
+    <color name="wait_black">#3aaaa8</color>
+
+
+    <color name="vip_bg">#FFFCF6</color>
+
+</resources>
